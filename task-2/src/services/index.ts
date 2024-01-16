@@ -55,6 +55,9 @@ export const CallSupply = async () => {
                 0
             );
             await tx.wait();
+            if(tx){
+                toast.success("Sucessfully called Supply")
+            }
 
         } else {
             toast.error("Connect wallet !");
